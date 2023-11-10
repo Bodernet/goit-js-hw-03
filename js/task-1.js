@@ -1,7 +1,7 @@
-
-
-
-
+function slugify(title) {
+  const slugifySplit = title.toLowerCase().split(" ").join("-");
+  return slugifySplit;
+}
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
 console.log(slugify("English for developer")); // "english-for-developer"
